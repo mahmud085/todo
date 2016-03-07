@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<% include ./head %>
+	</head>
+	<body class='container'>
+		<header>
+			<% include ./navigation %>
+		</header>
+		<main>
+			<div class='row'>
+				<div class='col-md-6 col-md-offset-3'>
+					<form role='form' method='post' action='/auth/local'>
+						<div class='form-group'>
+							<label>Email</label>
+							<input type='text' class="form-control" name="email">
+						</div>
+						<div class='form-group'>
+							<label>Password</label>
+							<input type='password' class="form-control" name="password">
+						</div>
+						<button type='submit' class="btn btn-warning btn-block">Log in</button>
+					</form>
+					<div class='text-center'>
+					<p >OR</p>
+					<a href='/auth/facebook' class='btn btn-primary btn-block'>Log in with Facebook</a>
+					<a href='/auth/google' class='btn btn-danger btn-block'>Log in with Google</a>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+	</body>
+</html>

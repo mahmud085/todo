@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<% include ./head %>
+		<style>
+			.contnt {
+
+			}
+			.logo{
+        		color: #f4511e;
+      			font-size: 15px;
+        	}
+			li a {
+
+			    display: block;
+			    color: #000;
+			    padding: 8px 0 8px 16px;
+			    text-decoration: none;
+			}
+
+			li a:hover {
+			    background-color: #555;
+			    color: white;
+			}
+			.sidemenu{
+				border-right: 1px solid gray;
+				width: 20%;
+				list-style-type: none;
+			    height: 100%;
+			    margin: 0;
+			    padding: 0;
+			    position: fixed; 
+			}
+		</style>
+	</head>
+	<body class='container'>
+		<header>
+			<% include ./navTodo %>
+		</header>
+		<main>
+			<div class='row'>
+				<div class="col-md-4">
+					<ul class='sidemenu'>
+						<li><a class='active' href="#">
+						<span class="glyphicon glyphicon-envelope logo"></span>  Inbox</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-tasks logo"></span>  Today</a></li>
+					</ul>
+				</div>
+				<div class="col-md-8 contnt">
+					<h2>Inbox</h2>
+					<a href="#"><span class="glyphicon glyphicon-plus logo"></span> Add Tasks</a>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
